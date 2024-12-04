@@ -1,0 +1,50 @@
+.temple-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.temple-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.temple-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid #007bff;
+}
+
+.temple-card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.temple-card button {
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.temple-card button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.temple-card button:active {
+    background-color: #004085;
+}
