@@ -1,12 +1,15 @@
 import React from "react";
 import "../styles/navbar.css";
+import { Link, useNavigate } from "react-router-dom";
 import { FaHome, FaPrayingHands, FaGlobe, FaInfoCircle, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <h1>Temple Ticket Booking</h1>
+        <Link to='/'>
+          <h1>Temple Ticket Booking</h1>
+        </Link>
       </div>
       <ul className="navbar-links">
         <li>
