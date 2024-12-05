@@ -19,7 +19,7 @@ function Statecard() {
                 <div className="temple-list">
                     {filteredTemples.map((temple) => (
                         <div className="temple-cards" key={temple.id}>
-                            <div className="temple-info">
+                            <div className="temple-infos">
                                 <h2>{temple.name}</h2>
                                 <p>{temple.State}</p>
                             </div>

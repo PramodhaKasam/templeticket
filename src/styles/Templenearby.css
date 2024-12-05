@@ -1,0 +1,61 @@
+.temple-nearby-page {
+    padding: 30px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .temple-block {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .temple-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .temple-block strong {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .temple-block p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .temple-block .temple-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4b8c2f;
+  }
+  
+  .temple-block .distance,
+  .temple-block .way-to-reach {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .temple-block .distance {
+    color: #ff5722;
+  }
+  
+  .temple-block .way-to-reach {
+    color: #00796b;
+  }
+  
+  .temple-nearby-page .temple-block + .temple-block {
+    margin-top: 20px;
+  }
+  

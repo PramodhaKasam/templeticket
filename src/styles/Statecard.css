@@ -47,19 +47,19 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.temple-info {
+.temple-infos {
     flex: 1;
     padding: 10px;
 }
 
-.temple-info h2 {
+.temple-infos h2 {
     font-size: 1.8rem;
     color: #2e7d32;
     margin: 0;
     font-weight: bold;
 }
 
-.temple-info p {
+.temple-infos p {
     font-size: 1rem;
     color: #555;
 }
