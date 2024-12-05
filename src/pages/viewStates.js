@@ -29,7 +29,7 @@ function ViewStates() {
       <div className="exploresection">
         <div className="templegrid">
           {filteredStates.map((state) => (
-            <StateCard key={state.id} temple={state} onClick={() => nav(`/${state.name}`)}/>
+            <StateCard key={state.id} temple={state} onClick={() => nav(`/state/${state.name}`)}/>
           ))}
         </div>
       </div>

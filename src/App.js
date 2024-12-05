@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import TempleDetails from "./pages/TempleDetails";
+import Statecard from "./pages/Statecard";
 import ViewState from "./pages/viewStates";
+import TempleCard from "./pages/Templecard";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/viewStates" element={<ViewState />} />
-          <Route path="/temple/:id" element={<TempleDetails />} />
+          <Route path="/state/:stateName" element={<Statecard />} />
+          <Route path='/temple/:templeName' element={<TempleCard/>}/>
         </Routes>
       </div>
     </Router>

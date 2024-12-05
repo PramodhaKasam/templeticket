@@ -32,7 +32,7 @@ const HomePage = () => {
             <StateCard
               key={state.id}
               temple={state}
-              onClick={() => navigate(`/${state.name}`)}
+              onClick={() => navigate(`/state/${state.name}`)}
             />
           ))}
         </div>

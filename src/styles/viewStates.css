@@ -1,15 +1,15 @@
 .exploresection{
-    position: relative;
-    padding: 50px 20px;
-    background: none;
-    text-align: center;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    border:  none;
+  position: relative;
+  padding: 50px 20px;
+  background: none;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border:  none;
 }
 
 .templegrid{
-position: relative;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 25px;
