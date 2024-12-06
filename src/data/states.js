@@ -1,8 +1,8 @@
 const states = [
-    {id:1, name: "Andhra Pradesh", image: 'https://static.sanatanprabhat.org/wp-content/uploads/sites/7/2023/04/20220333/temples-of-andhra-pradesh650.jpg'}, 
-    {id:2, name: "Arunachal Pradesh", image: 'https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2023/10/Golden-Pagoda-of-Namsai-Arunachal-Pradesh.jpg?fit=1000%2C667&ssl=1'}, 
-    {id:3, name: "Assam", image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGXtu964QSbBPxExt7udvJOWIR1pU_IyDqrw&s'}, 
-    {id:4, name: "Bihar", image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlheU0yG0_qd45mpfXVTAMt0xEPOxlDNoT6w&s'}, 
+    {id:1, name: "Andhra Pradesh", image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvSqV_C9qkrqBt-MY42uGRC_o61CFWCm5CG4j9tTxd2fG3z1zbjqESh1oBMWvr8lNQiws&usqp=CAU'}, 
+    {id:2, name: "Arunachal Pradesh", image: 'https://static.officeholidays.com/images/1280x853c/india-arunachal-pradesh-01.jpg'}, 
+    {id:3, name: "Assam", image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjmdlux5br6nnKytSWL_nW75-YdjU3Vhgkg&s'}, 
+    {id:4, name: "Bihar", image: 'https://www.thrillophilia.com/blog/wp-content/uploads/2021/09/Screenshot-2021-09-06-182833-1024x627.png'}, 
     {id:5, name: "Chhattisgarh", image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPzr5bTVsNiO20HXSbPL9fBJniR5XcotOwDA&s'}, 
     {id:6, name: "Goa", image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbKiG-VA63-iqFpKQ_OjgioFYPyn74k0EF1A&s'}, 
     {id:7, name: "Gujarat", image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqTgQ-6-nFxdWTBWGmXLx0ANYN-NKsDYEYdg&s'}, 
