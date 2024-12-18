@@ -10,13 +10,7 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <input
-      type="text"
-      placeholder="Search by state..."
-      className="search-bar"
-      value={searchTerm}
-      onChange={handleSearchChange}
-    />
+    <input type="text" placeholder="Search by state..." className="search-bar" value={searchTerm} onChange={handleSearchChange} />
   );
 };
 

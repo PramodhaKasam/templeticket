@@ -12,9 +12,7 @@ const StateCard = ({ temple, onClick }) => {
         </div>
       </div>
       <h2>{temple.name}</h2>
-      <button onClick={() => onClick(temple)}>
-        View Temples
-      </button>
+      <button onClick={() => onClick(temple)}> View Temples </button>
     </div>
   );
 };

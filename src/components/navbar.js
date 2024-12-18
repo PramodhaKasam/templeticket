@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/navbar.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { FaHome, FaPrayingHands, FaGlobe, FaInfoCircle, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
