@@ -8,12 +8,12 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-brand">
         <Link to='/'>
-          <h1 style={{textDecoration : "underline white"}}>Temple Ticket Booking</h1>
+          <h1 style={{textDecoration: "underline  white"}}>Temple Ticket Booking</h1>
         </Link>
       </div>
       <ul className="navbar-links">
         <li>
-          <a href="#home">
+          <a href="">
             <FaHome className="icon" /> Home
           </a>
         </li>

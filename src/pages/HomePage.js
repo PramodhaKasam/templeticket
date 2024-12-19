@@ -25,31 +25,8 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div class="what-we-do">
-        <h2>What We Do</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <h3>Darshan</h3>
-            <p>Book seamless temple darshans for a divine experience without hassle.</p>
-          </div>
-          <div class="service-card">
-            <h3>Accommodation</h3>
-            <p>Find nearby accommodations tailored to your spiritual journey.</p>
-          </div>
-          <div class="service-card">
-            <h3>Travel</h3>
-            <p>Plan your travel to the temples with ease and convenience.</p>
-          </div>
-          <div class="service-card">
-            <h3>Guides</h3>
-            <p>Hire experienced guides to enrich your visit with deep insights.</p>
-          </div>
-        </div>
-      </div>
-
-
       <div className="explore-section">
-        <h2>Explore Temples</h2>
+        <h1>Explore Temples</h1>
         <div className="temple-grid">
           {visibleStates.map((state) => (
             <StateCard
