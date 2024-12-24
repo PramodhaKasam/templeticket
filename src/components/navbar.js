@@ -11,33 +11,11 @@ const Navbar = () => {
           <h1 style={{textDecoration: "underline  white"}}>Temple Ticket Booking</h1>
         </Link>
       </div>
-      <ul className="navbar-links">
-        <li>
-          <a href="">
-            <FaHome className="icon" /> Home
-          </a>
-        </li>
-        <li>
-          <a href="#pilgrim-services">
-            <FaPrayingHands className="icon" /> Pilgrim Services
-          </a>
-        </li>
-        <li>
-          <a href="#online-services">
-            <FaGlobe className="icon" /> Online Services
-          </a>
-        </li>
-        <li>
-          <a href="#about">
-            <FaInfoCircle className="icon" /> About
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <FaEnvelope className="icon" /> Contact
-          </a>
-        </li>
-      </ul>
+      <div className="sign">
+        <p>Sign up</p>
+        <p>Log in</p>
+      </div>
+      
     </nav>
   );
 };

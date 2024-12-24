@@ -22,10 +22,24 @@ const HomePage = () => {
             Book tickets to explore the most revered temples across India.
             Embark on a spiritual journey with ease and convenience.
           </p>
+          <button>Explore</button>
         </div>
       </div>
 
-      <div className="explore-section">
+      <div className="texts">
+        <h1>Everything You Need for a Seamless Temple Journey</h1>
+        <p>
+           Plan your spiritual visit with ease. From travel and accommodation to darshan bookings and
+           exploring nearby attractions, our platform brings it all together in one place. 
+          
+        </p>
+      </div>
+
+      <div className="what-we-do">
+        
+      </div>
+
+      {/* <div className="explore-section">
         <h1>Explore Temples</h1>
         <div className="temple-grid">
           {visibleStates.map((state) => (
@@ -40,7 +54,7 @@ const HomePage = () => {
         <Link to='/viewStates'>
           <button className="view-more-btn"> View More States </button>
         </Link>  
-      </div>
+      </div> */}
 
       <Footer />
     </div>
