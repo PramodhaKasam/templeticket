@@ -6,36 +6,57 @@ import {faHouse} from '@fortawesome/free-solid-svg-icons'
 import {faCompass} from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Navbar from "../components/navbar";
 import temple from "../assets/temple-main.jpg";
+import temple1 from "../assets/temple-main-2.jpg"
+import bg from '../assets/bg.jpg'
 import Footer from "../components/Footer";
-import Swiper from 'swiper'
-import {Navigation, Pagination} from 'swiper/modules'
-import 'swiper/css/bundle'
 
 const HomePage = () => {
   const navigate = useNavigate();
-  const swiper = new Swiper('.swiper', {
-    modules: [Navigation, Pagination],
 
-    loop:true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable : true,
-      dynamicBullets:true
-    },
+  const images = [
+    temple,
+    'https://t4.ftcdn.net/jpg/11/11/03/53/360_F_1111035306_VCVZFg3Z37p5QBBSTtL04vMuP80iI5y8.jpg',   
+    'https://www.captureatrip.com/_next/image?url=https%3A%2F%2Fcaptureatrip-cms-storage.s3.ap-south-1.amazonaws.com%2FSun_Temples_of_India_2c4e94a682.jpg&w=3840&q=50',   
+    'https://www.ramana-maharshi.org/wp-content/uploads/2024/01/aim_624_4.jpg', 
+  ];
 
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000); 
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const style = {
+      backgroundImage: 'url(https://cdn.stocksnap.io/img-thumbs/960w/abstract-background_O4SYY1ZGMO.jpg)', 
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: '100%',
+      // height: '100vh' 
+  }
+ 
 
   return (
-    <div>
+    <div style={ style}>
       <Navbar />
       <div className="hero">
-        <img src={temple} alt="Temple" className="hero-image" />
+        <div className="slideshow">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className={`slide ${index === currentIndex ? 'active' : ''}`}
+            />
+          ))}
+        </div>
+        
         <div className="hero-text">
           <h1>Discover the Divine</h1>
           <p>
@@ -125,9 +146,9 @@ const HomePage = () => {
 
       <div className="what">
         <h1>Explore Exclusively with Us</h1>
-        <div className="card-wrapper swiper">
+        <div className="card-wrapper ">
           <div className="swiper-wrapper">
-            <div className="point swiper-slide">
+            <div className="point ">
               <img src="https://as2.ftcdn.net/v2/jpg/06/12/32/45/1000_F_612324540_iVqW5JxR8fS8Vpj6EjQazSCgrcheb4GN.jpg" />
               <div className="matter">
                 <strong>State-wise Division</strong>
@@ -139,7 +160,7 @@ const HomePage = () => {
               </div>
               {/* <span className="span">&#8594;</span> */}
             </div>
-            <div className="point swiper-slide">
+            <div className="point ">
               <img src="https://t4.ftcdn.net/jpg/09/57/81/07/360_F_957810751_w7KdtaHHqd720zJWiXclnOKsmp3S48YG.jpg" />
               <div className="matter">
                 <strong>Comprehensive Temple Listings</strong>
@@ -149,9 +170,9 @@ const HomePage = () => {
                 </p>
                 <p><span>View </span> &#8594;</p>
               </div>
-              {/* <span className="span">&#8594;</span> */}
+              
             </div>
-            <div className="point swiper-slide">
+            <div className="point ">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2gZ8ifZc5IpHfLqf4VtXldOjrIMMiuarbLw&s" />
               <div className="matter">
                 <strong>More Than Just Darshan</strong>
@@ -161,32 +182,13 @@ const HomePage = () => {
                 </p>
                 <p><span>View </span> &#8594;</p>
               </div>
-              {/* <span className="span">&#8594;</span> */}
+             
             </div>
           </div>
-          <div className="swiper-pagination"></div>
-          <div className="slide-button swiper-button-prev"></div>
-          <div className="slide-button swiper-button-next"></div>
+         
         </div>  
-        {/* <p className="count">&lt;  01/04  &gt;</p> */}
+       
       </div>
-
-      {/* <div className="explore-section">
-        <h1>Explore Temples</h1>
-        <div className="temple-grid">
-          {visibleStates.map((state) => (
-            <StateCard
-              key={state.id}
-              temple={state}
-              onClick={() => navigate(`/state/${state.name}`)}
-            />
-          ))}
-        </div>
-        <div className="explore-gradient"></div>
-        <Link to='/viewStates'>
-          <button className="view-more-btn"> View More States </button>
-        </Link>  
-      </div> */}
 
       <Footer />
     </div>

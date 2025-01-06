@@ -2,18 +2,41 @@ body {
   padding-top: 70px;
 }
 
+.slideshow {
+  position: relative;
+  width: 100vw;
+  width: 100%;
+  height: 655px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  left:0;
+  background-size: cover; 
+  background-position: center;
+  filter: brightness(70%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
 .hero {
   position: relative;
   text-align: center;
   color: white;
   margin-bottom: 0;
-}
-
-.hero-image {
-  width: 100%;
-  height: 655px;
-  object-fit: cover;
-  filter: brightness(70%);
 }
 
 .hero-text {
@@ -52,6 +75,7 @@ body {
   font-weight: bold;
   margin-top: -10px;
   background-color: #d6d2d2;
+  opacity: 0.5;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -82,7 +106,7 @@ body {
 }
 
 .services .box{
-  background-color:#f4f4f4;
+  backdrop-filter: blur(10px);
   padding: 10px;
   padding-left: 0px;
   display: flex;
@@ -133,6 +157,7 @@ body {
 
 .support{
   background-color: #d6d2d2;
+  opacity: 0.5;
   margin-top: 0;
   padding: 70px;
   font-family: Arial, Helvetica, sans-serif;
@@ -164,6 +189,7 @@ body {
 
 .what{
   background-color: rgb(42, 41, 41);
+  opacity: 0.7;
   color: white;
   padding: 60px;
   padding-bottom: 90px;
@@ -179,13 +205,12 @@ body {
 
 .point{
   display: flex;
+  column-gap: 5%;
   justify-content: center;
-  margin-left: 70px; 
 }
 
 .point img{
   height: 300px;
-  margin-left: 23%;
   border: 1px solid white;
 }
 
@@ -221,69 +246,4 @@ body {
   opacity: 1;
 }
 
-.card-wrapper .slide-button{
-  color: white;
-  margin-top: -110px;
-  opacity: 0.5;
-}
-
-.swiper-slide:hover .card-wrapper .slide-button{
-  opacity: 1;
-}
   
-/* .temple-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
-  padding: 20px 0;
-}
-
-.temple-grid > div {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.temple-grid > div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.explore-section {
-  position: relative;
-  padding: 20px 20px;
-  background: linear-gradient(to bottom, #ffffff, #e6f0ff);
-  text-align: center;
-}
-
-.explore-section h1{
-  font-size: 40px;
-}
-
-.explore-gradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-  z-index: 1;
-}
-
-.view-more-btn {
-  background-color: #ff5722;
-  color: white;
-  font-size: 18px;
-  padding: 10px 30px;
-  border: none;
-  border-radius: 20px;
-  margin-top: 20px;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-}
-
-.view-more-btn:hover {
-  background-color: #e64a19;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
- */
