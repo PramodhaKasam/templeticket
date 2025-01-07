@@ -1,15 +1,13 @@
 import React from "react";
 import "../styles/navbar.css";
-import { Link} from "react-router-dom";
-import { FaHome, FaPrayingHands, FaGlobe, FaInfoCircle, FaEnvelope } from "react-icons/fa";
+import { useNavigate} from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to='/'>
-          <h1 style={{textDecoration: "underline  white"}}>Temple Ticket Booking</h1>
-        </Link>
+        <h1 style={{cursor : 'pointer'}} onClick={() => navigate('/')}>Temple Ticket Booking</h1>
       </div>
       <div className="sign">
         <p>Sign up</p>

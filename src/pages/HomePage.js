@@ -5,7 +5,7 @@ import { faHandsPraying } from '@fortawesome/free-solid-svg-icons';
 import {faHouse} from '@fortawesome/free-solid-svg-icons'
 import {faCompass} from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "../components/navbar";
 import temple from "../assets/temple-main.jpg";
@@ -37,8 +37,7 @@ const HomePage = () => {
       backgroundImage: 'url(https://cdn.stocksnap.io/img-thumbs/960w/abstract-background_O4SYY1ZGMO.jpg)', 
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      width: '100%',
-      // height: '100vh' 
+      width: '100%', 
   }
  
 
@@ -63,7 +62,7 @@ const HomePage = () => {
             Book tickets to explore the most revered temples across India.
             Embark on a spiritual journey with ease and convenience.
           </p>
-          <button>Explore</button>
+          <button onClick={() =>navigate('/viewStates')}>Explore</button>
         </div>
       </div>
 
@@ -84,7 +83,7 @@ const HomePage = () => {
           <span><i className="fa fa-ticket"></i><strong>Ticket booking:</strong> Options for regular, special, and VIP darshan tickets</span>
           <span><i className="fa fa-clock"></i><strong>Timings:</strong> Mention specific timings for various darshan types(morning, afternoon, evening)</span>
           </ul>
-          <button>Try Now</button>
+          <button onClick={() => navigate('/temple/Baidyanath/darshan')}>Try Now</button>
         </div>
 
         <div className="box">
@@ -94,7 +93,7 @@ const HomePage = () => {
             <span><i className="fa fa-cutlery"></i><strong>Detailed Features:</strong> Provide lists of aenities like air conditioning, breakfast, or hot water facilities.</span>
             <span><i className="fa fa-envelope-open"></i><strong>Room Categories:</strong>  Specify choices like single rooms, family rooms, and suites.</span>
           </ul>
-          <button>Try Now</button>
+          <button onClick={() => navigate('/temple/Baidyanath/accomodation')}>Try Now</button>
         </div>
 
         <div className="box">
@@ -103,7 +102,7 @@ const HomePage = () => {
             <span><i className="fa fa-subway"></i><strong>Modes of transport:</strong> Highlight train and bus schedules to the temple.</span>
             <span><i className="fa fa-map"></i><strong>Route Planner:</strong> Interactive route planning for self-driven travelers</span>
           </ul>
-          <button>Try Now</button>
+          <button onClick={() => navigate('/temple/Baidyanath/travel')}>Try Now</button>
         </div>
       </div>
 
@@ -156,7 +155,7 @@ const HomePage = () => {
                   "Effortlessly navigate through temples by selecting the state of your choice. Experience a seamless
                   search functionality tailored for India’s diverse cultural and spiritual heritage."
                 </p>
-                <p><span>View </span> &#8594;</p>
+                <p onClick={() => navigate('/viewStates')}><span>View </span> &#8594;</p>
               </div>
               {/* <span className="span">&#8594;</span> */}
             </div>
@@ -168,7 +167,7 @@ const HomePage = () => {
                   "Access a meticulously curated list of temples for each state. Whether it’s a famous shrine or a hidden gem,
                    we’ve got you covered."
                 </p>
-                <p><span>View </span> &#8594;</p>
+                <p onClick={() => navigate('/state/Jharkhand')}><span>View </span> &#8594;</p>
               </div>
               
             </div>
@@ -180,7 +179,7 @@ const HomePage = () => {
                   "Dive into the rich history and fascinating stories behind each temple. Discover their unique
                   traditions, architectural marvels, and specialties that make them stand out."
                 </p>
-                <p><span>View </span> &#8594;</p>
+                <p onClick={() => navigate('/temple/Baidyanath/darshan')}><span>View </span> &#8594;</p>
               </div>
              
             </div>
